@@ -1,0 +1,348 @@
+/*
+      @package lepetitfleur
+*/
+/*
+     Import
+     -------------------------------------------
+*/
+/*
+     Variables
+     -------------------------------------------
+*/
+/*
+     Mixins
+     -------------------------------------------
+*/
+/*
+     Font Icon
+     -------------------------------------------
+*/
+@font-face {
+  font-family: 'le-petit-fleur';
+  src: url("../fonts/le-petit-fleur.eot?k58stx");
+  src: url("../fonts/le-petit-fleur.eot?k58stx#iefix") format("embedded-opentype"), url("../fonts/le-petit-fleur.ttf?k58stx") format("truetype"), url("../fonts/le-petit-fleur.woff?k58stx") format("woff"), url("../fonts/le-petit-fleur.svg?k58stx#le-petit-fleur") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+.le-petit-fleur {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'le-petit-fleur' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fleur-video:before {
+  content: "\e901"; }
+
+.fleur-tag:before {
+  content: "\e902"; }
+
+.fleur-share:before {
+  content: "\e903"; }
+
+.fleur-search:before {
+  content: "\e904"; }
+
+.fleur-pics:before {
+  content: "\e905"; }
+
+.fleur-pencil:before {
+  content: "\e900"; }
+
+.fleur-menu:before {
+  content: "\e906"; }
+
+.fleur-loading:before {
+  content: "\e907"; }
+
+.fleur-link:before {
+  content: "\e908"; }
+
+.fleur-comment:before {
+  content: "\e909"; }
+
+.fleur-close:before {
+  content: "\e90a"; }
+
+.fleur-chevron-right:before {
+  content: "\e90b"; }
+
+.fleur-chevron-left:before {
+  content: "\e90c"; }
+
+.fleur-audio:before {
+  content: "\e90d"; }
+
+/*
+     Generic
+     -------------------------------------------
+*/
+body {
+  font-family: sans-serif; }
+
+a {
+  color: #000000;
+  -webkit-transition: color 320ms ease;
+  -moz-transition: color 320ms ease;
+  -ms-transition: color 320ms ease;
+  -o-transition: color 320ms ease;
+  transition: color 320ms ease; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #000000; }
+
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .table .table-cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+
+/*
+     Header
+     -------------------------------------------
+*/
+.header-container {
+  position: relative;
+  display: block;
+  height: 326px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+
+.site-title {
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  font-family: cursive; }
+
+.site-description {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 0.4em;
+  font-family: sans-serif; }
+
+.nav-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/*
+
+       Nav bav
+       ------------------------------------------------
+*/
+.navbar-lepetitfleur {
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  min-height: auto;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .navbar-lepetitfleur ul {
+    float: none; }
+  .navbar-lepetitfleur li {
+    float: none;
+    display: inline-block; }
+    .navbar-lepetitfleur li.active a {
+      opacity: 1; }
+      .navbar-lepetitfleur li.active a:after {
+        -webkit-transform: translateY(0px);
+        -moz-trandform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1; }
+    .navbar-lepetitfleur li.open a {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.1); }
+      .navbar-lepetitfleur li.open a:after {
+        -webkit-transform: translateY(10px);
+        -moz-trandform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px);
+        opacity: 0; }
+      .navbar-lepetitfleur li.open a:hover, .navbar-lepetitfleur li.open a:focus, .navbar-lepetitfleur li.open a:visited {
+        background-color: rgba(0, 0, 0, 0.1) !important; }
+        .navbar-lepetitfleur li.open a:hover:after, .navbar-lepetitfleur li.open a:focus:after, .navbar-lepetitfleur li.open a:visited:after {
+          -webkit-transform: translateY(10px);
+          -moz-trandform: translateY(10px);
+          -ms-transform: translateY(10px);
+          -o-transform: translateY(10px);
+          transform: translateY(10px);
+          opacity: 0 !important; }
+    .navbar-lepetitfleur li a {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0.7;
+      letter-spacing: 0.05em;
+      backgroun: none;
+      -webkit-transition: opacity 320ms ease;
+      -moz-transition: opacity 320ms ease;
+      -ms-transition: opacity 320ms ease;
+      -o-transition: opacity 320ms ease;
+      transition: opacity 320ms ease; }
+      .navbar-lepetitfleur li a:hover, .navbar-lepetitfleur li a:focus, .navbar-lepetitfleur li a:visited {
+        background: none;
+        opacity: 1; }
+        .navbar-lepetitfleur li a:hover:after, .navbar-lepetitfleur li a:focus:after, .navbar-lepetitfleur li a:visited:after {
+          -webkit-transform: translateY(0px);
+          -moz-trandform: translateY(0px);
+          -ms-transform: translateY(0px);
+          -o-transform: translateY(0px);
+          transform: translateY(0px);
+          opacity: 1; }
+      .navbar-lepetitfleur li a:after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 15px;
+        right: 15px;
+        bottom: 10px;
+        height: 2px;
+        background: #fff;
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        -moz-trandform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px); }
+
+ /*
+
+        Standard Post Format
+        ------------------------------------------------
+ */
+article {
+  margin-bottom: 80px; }
+
+h1 {
+  font-size: 48px;
+  font-weight: 200; }
+  h1.entry-title {
+    line-height: 1.5em;
+    margin: 40px 0 0;
+    padding: 0; }
+    h1.entry-title:before {
+      margin-right: 10px; }
+    h1.entry-title:after {
+      margin-left: 10px; }
+
+.entry-meta {
+  font-size: 13px;
+  font-weight: 300;
+  color: #000000;
+  margin-top: 20px; }
+  .entry-meta a {
+    font-weight: 500;
+    color: #000000; }
+    .entry-meta a:hover, .entry-meta a:focus {
+      color: #000000; }
+
+.standard-featured-link {
+  display: block;
+  position: relative; }
+  .standard-featured-link:hover .standard-featured:after, .standard-featured-link:focus .standard-featured:after {
+    background-color: rgba(0, 0, 0, 0); }
+
+.standard-featured {
+  height: 330px;
+  display: block;
+  position: relative; }
+  .standard-featured:after {
+    -webkit-transition: background-color 320ms ease;
+    -moz-transition: background-color 320ms ease;
+    -ms-transition: background-color 320ms ease;
+    -o-transition: background-color 320ms ease;
+    transition: background-color 320ms ease;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35); }
+
+.entry-excerpt {
+  margin: 30px 0 16px; }
+  .entry-excerpt p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.02em; }
+
+.button-container {
+  margin-bottom: 30px; }
+
+.btn-lepetitfleur {
+  -webkit-transition: all 320ms ease;
+  -moz-transition: all 320ms ease;
+  -ms-transition: all 320ms ease;
+  -o-transition: all 320ms ease;
+  transition: all 320ms ease;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background-color: transparent; }
+  .btn-lepetitfleur:hover, .btn-lepetitfleur:focus {
+    color: white;
+    border-color: #000000;
+    background-color: #000000; }
+
+.entry-footer {
+  padding: 10px 5px;
+  border-bottom: 4px solid grey;
+  color: grey;
+  text-transform: uppercase; }
+  .entry-footer a {
+    color: grey;
+    display: inline-block;
+    font-size: 12px; }
+    .entry-footer a:hover, .entry-footer a:focus {
+      color: #000000; }
+  .entry-footer .tags-list .le-petit-fleur {
+    margin-left: 10px; }
+  .entry-footer .tags-list a {
+    padding: 0 4px; }
+  .entry-footer .comments-link .le-petit-fleur {
+    margin-left: 10px; }
+
+/*
+
+       Footer Section
+       ------------------------------------------------
+*/
+.lepetitfleur-footer {
+  background-color: #333;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: block; }
+
+/*# sourceMappingURL=lepetitfleur.css.map */
